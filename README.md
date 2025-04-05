@@ -27,7 +27,7 @@ This repository is structured to support multiple themes, each contained in its 
 
 1. Download or clone this repository.
 2. Inside Publii, go to **Themes → Import Theme**.
-3. Select the `NetDream` folder (or a zipped copy of it).
+3. Select the `NetDream` zip file.
 4. Activate and enjoy your personal web time machine.
 
 ---
@@ -43,5 +43,3 @@ Use them, remix them, share them — just keep them free.
 ## 💬 Feedback
 
 Bug reports, theme suggestions, and pull requests are welcome. This repo is synced from a private working project; public updates may be occasional but clean.
-
----
