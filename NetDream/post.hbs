@@ -1,0 +1,60 @@
+{{> head}}
+{{> navbar}}
+
+{{#post}}
+<header>
+    <h1>{{title}}</h1>
+    <p>
+        <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
+            {{date createdAt}}
+        </time>
+        {{#if mainTag}}
+        | 
+        <a href="{{ mainTag.url }}" class="post__maintag">
+            {{mainTag.name }}
+        </a>
+        {{/if}}
+    </p>
+</header>
+
+<main>
+    {{! featured image }}
+    {{#featuredImage}}
+    {{! check if an image exists }}
+    {{#if url}}
+    <figure id="featured-image">
+        <img src="{{url}}"
+             {{! checks if the Responsive Images option (located in Site Settings -> Website Speed) is enabled  }}
+             {{#if @config.site.responsiveImages}}
+             {{responsiveImageAttributes 'featuredImage' srcset sizes}}
+             {{/if}}
+             {{! generates a native loading attribute; if the Media Lazy Load option (located in Site Settings -> Website Speed) is disabled, the loading attribute is not generated }}
+             {{ lazyload "eager" }}
+             height="{{height}}"
+             width="{{width}}"
+             alt="{{alt}}">
+        {{! checks if the caption or credits exist }}
+        {{#checkIfAny caption credits}}
+        <figcaption>
+            {{caption}}
+            {{credits}}
+        </figcaption>
+        {{/checkIfAny}}
+        {{! /checks if the caption or credits exist }}
+    </figure>
+    {{/if}}
+    {{! /check if an image exists }}
+    {{/featuredImage}}
+    {{! /featured image }}
+
+    {{! post body }}
+    <div id="post-entry">
+        {{{text}}}
+    </div>
+    {{! /post body }}
+</main>
+{{/post}}
+
+<footer>
+    {{> footer}}
+</footer>

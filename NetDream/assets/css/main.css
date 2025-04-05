@@ -1,0 +1,307 @@
+/* 90's Netscape Navigator Inspired Theme for Publii */
+
+/* Reset & Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+    background-color: var(--body-background-color);
+}
+
+/* Main container for centering content */
+.container {
+    width: var(--container-width);
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+/*** Layout ***/
+/* Header */
+header {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+/* Main content area */
+main {
+    width: calc(var(--main-width));
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* Clearfix utility */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Images */
+img {
+    border: 1px solid #000;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/* Related posts (stacked for 90's style) */
+#related-posts > div {
+    margin-bottom: 10px;
+}
+
+/*** Publii Generated Classes ***/
+
+/* Text alignment */
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/* Post images */
+.post__image--left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post__image--right {
+    float: right;
+    margin-left: 10px;
+}
+
+.post__image--center {
+    display: block;
+    margin: 0 auto;
+}
+
+.post__image--wide,
+.post__image--full {
+    width: 100%;
+}
+
+/* Post video */
+.post__video {
+    /* Default block display */
+    /* Post images */
+.post__image--left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post__image--right {
+    float: right;
+    margin-left: 10px;
+}
+
+.post__image--center {
+    display: block;
+    margin: 0 auto;
+}
+
+.post__image--wide,
+.post__image--full {
+    width: 100%;
+}
+
+/* Post video */
+.post__video {
+    display: flex;
+    justify-content: center;
+}
+
+.post__iframe {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Table of content */
+.post__toc {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+/* Separator styles */
+hr {
+    /*border: 0;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;*/
+}
+
+.separator--dot {
+    border-top: 1px dotted #000;
+}
+
+.separator--dots {
+    border-top: 1px dashed #000;
+}
+
+.separator--long-line {
+    border-top: 1px solid #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Gallery */
+.gallery-wrapper {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.gallery-wrapper--wide,
+.gallery-wrapper--full {
+    width: 100%;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery__item {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+/* Menu */
+.menu {
+    background-color: var(--menubar-background-color);
+    padding: 5px;
+    text-align: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.active-parent {
+    font-style: italic;
+}
+
+/* Link styling reminiscent of old browsers */
+a:link {
+    color: var(--body-link-color);
+}
+
+a:visited {
+    color: var(--body-visited-link-color);
+}
+
+a:hover {
+    color: var(--body-hover-link-color);
+    text-decoration: underline;
+}
+
+footer a:link {
+    color: var(--footer-link-color);
+}
+
+footer a:visited {
+    color: var(--footer-visited-link-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--footer-hover-link-color);
+}
+
+/* Navbar layout */
+.navbar {
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-text-color);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar__logo a {
+    color: var(--navbar-text-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Main menu styles */
+.menu-bar {
+    background-color: var(--menubar-background-color);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .menu li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .menu a {
+        color: var(--menubar-text-color);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+        .menu a:hover {
+            text-decoration: none;
+        }
+
+/* Submenu styles (not really used in 90s themes but kept for completeness) */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--submenu-background-color);
+    border: 1px solid #000;
+    padding: 5px;
+    list-style: none;
+}
+
+.has-submenu:hover > .submenu {
+    display: block;
+}

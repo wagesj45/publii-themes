@@ -1,0 +1,505 @@
+{
+  "name": "netdream",
+  "version": "1.0.0.0",
+  "author": "Jordan Wages <https://jordanwages.com/>",
+  "renderer": {
+    "relatedPostsNumber": 3,
+    "renderRelatedPosts": true,
+    "renderSimilarPosts": false,
+    "renderPrevNextPosts": true,
+    "createContentStructure": true,
+    "includeFeaturedInPosts": true,
+    "tagsIncludeFeaturedInPosts": true,
+    "authorsIncludeFeaturedInPosts": true,
+    "featuredPostsNumber": 0,
+    "tagsFeaturedPostsNumber": 0,
+    "authorsFeaturedPostsNumber": 0,
+    "createTagPages": true,
+    "createAuthorPages": true,
+    "createTagsList": true,
+    "create404page": true,
+    "createSearchPage": true,
+    "customHTML": {
+      "beforePost": "Before every post",
+      "afterPost": "After every post",
+      "beforePage": "Before every page",
+      "afterPage": "After every page"
+    }
+  },
+  "supportedFeatures": {
+    "blockEditor": true,
+    "tagsList": true,
+    "tagPages": true,
+    "tagImages": true,
+    "authorPages": true,
+    "authorImages": true,
+    "searchPage": true,
+    "errorPage": true,
+    "customSearch": true,
+    "customComments": true,
+    "embedConsents": true,
+    "pages": true
+  },
+  "menus": {
+    "mainMenu": "Main menu"
+  },
+  "config": [
+    {
+      "name": "postsPerPage",
+      "label": "Posts per page",
+      "value": 12,
+      "type": "number"
+    },
+    {
+      "name": "tagsPostsPerPage",
+      "label": "Tags posts per page",
+      "value": 12,
+      "type": "number"
+    },
+    {
+      "name": "authorsPostsPerPage",
+      "label": "Authors posts per page",
+      "value": 12,
+      "type": "number"
+    },
+    {
+      "name": "excerptLength",
+      "label": "Excerpt length",
+      "value": 25,
+      "type": "number"
+    },
+    {
+      "name": "logo",
+      "label": "Website logo",
+      "value": "",
+      "type": "upload",
+      "upload": true
+    }
+  ],
+  "customConfig": [
+    {
+      "name": "mainWidth",
+      "label": "Main Width",
+      "group": "Layout",
+      "value": "85%",
+      "type": "text"
+    },
+    {
+      "name": "navbarBackgroundColor",
+      "label": "Navbar Background Color",
+      "group": "Header",
+      "value": "#003366",
+      "type": "colorpicker"
+    },
+    {
+      "name": "navbarTextColor",
+      "label": "Navbar Text Color",
+      "group": "Header",
+      "value": "#FFFFFF",
+      "type": "colorpicker"
+    },
+    {
+      "name": "menubarBackgroundColor",
+      "label": "Menubar Background Color",
+      "group": "Menu",
+      "value": "#2F685E",
+      "type": "colorpicker"
+    },
+    {
+      "name": "menubarTextColor",
+      "label": "Menubar Text Color",
+      "group": "Menu",
+      "value": "#FFFFFF",
+      "type": "colorpicker"
+    },
+    {
+      "name": "bodyBackgroundColor",
+      "label": "Body Background Color",
+      "group": "Body",
+      "value": "#C0C0C0",
+      "type": "colorpicker"
+    },
+    {
+      "name": "bodyTextColor",
+      "label": "Body Text Color",
+      "group": "Body",
+      "value": "#000000",
+      "type": "colorpicker"
+    },
+    {
+      "name": "bodyLinkColor",
+      "label": "Body Link Color",
+      "group": "Body",
+      "value": "#0000EE",
+      "type": "colorpicker"
+    },
+    {
+      "name": "bodyVisitedLinkColor",
+      "label": "Body Visited Link Color",
+      "group": "Body",
+      "value": "#551A8B",
+      "type": "colorpicker"
+    },
+    {
+      "name": "bodyHoverLinkColor",
+      "label": "Body Hover Link Color",
+      "group": "Body",
+      "value": "#000000",
+      "type": "colorpicker"
+    },
+    {
+      "name": "footerLinkColor",
+      "label": "Footer Link Color",
+      "group": "Footer",
+      "value": "#FFFECC",
+      "type": "colorpicker"
+    },
+    {
+      "name": "footerVisitedLinkColor",
+      "label": "Footer Visited Link Color",
+      "group": "Footer",
+      "value": "#A87CA8",
+      "type": "colorpicker"
+    },
+    {
+      "name": "footerHoverLinkColor",
+      "label": "Footer Hover Link Color",
+      "group": "Footer",
+      "value": "#B3B28C",
+      "type": "colorpicker"
+    },
+    {
+      "name": "headerBackgroundColor",
+      "label": "Header Background Color",
+      "group": "Header",
+      "value": "#3B4C5A",
+      "type": "colorpicker"
+    },
+    {
+      "name": "headerTextColor",
+      "label": "Header Text Color",
+      "group": "Header",
+      "value": "#F8F8F0",
+      "type": "colorpicker"
+    },
+    {
+      "name": "headerLogoText",
+      "label": "Header Logo Text",
+      "group": "Header",
+      "value": "Your Website Title or Logo Text",
+      "type": "text"
+    },
+    {
+      "name": "footerBackgroundColor",
+      "label": "Footer Background Color",
+      "group": "Footer",
+      "value": "#003366",
+      "type": "colorpicker"
+    },
+    {
+      "name": "footerTextColor",
+      "label": "Footer Text Color",
+      "group": "Footer",
+      "value": "#FFFFFF",
+      "type": "colorpicker"
+    },
+    {
+      "name": "submenuBackgroundColor",
+      "label": "Submenu Background Color",
+      "group": "Menu",
+      "value": "#2F685E",
+      "type": "colorpicker"
+    },
+    {
+      "name": "submenuTextColor",
+      "label": "Submenu Text Color",
+      "group": "Menu",
+      "value": "#FFFFFF",
+      "type": "colorpicker"
+    },
+    {
+      "name": "borderColor",
+      "label": "Border Color",
+      "group": "Layout",
+      "value": "#272727",
+      "type": "colorpicker"
+    },
+    {
+      "name": "landingPageTitle",
+      "label": "Landing Page Title",
+      "group": "Layout",
+      "value": "Your Title Here",
+      "type": "text"
+    },
+    {
+      "name": "landingPageSubtitle",
+      "label": "Landing Page Subtitle",
+      "group": "Layout",
+      "value": "Your Subtitle Here",
+      "type": "text"
+    },
+    {
+      "name": "landingPageText",
+      "label": "Landing Page Text",
+      "group": "Layout",
+      "value": "",
+      "type": "wysiwyg"
+    },
+    {
+      "name": "footerText",
+      "label": "Footer Text",
+      "group": "Layout",
+      "value": "",
+      "type": "wysiwyg"
+    },
+    {
+      "name": "fontSize",
+      "label": "Font size",
+      "group": "Fonts",
+      "note": "The font-size of the root element in REM unit",
+      "value": "1",
+      "type": "range",
+      "min": 1,
+      "max": 3,
+      "step": 0.05
+    },
+    {
+      "name": "faviconUpload",
+      "label": "Upload favicon file",
+      "group": "Additional",
+      "note": "The ideal size of a favicon is 16x16 pixels. Save your favicon as either favicon.png or favicon.ico",
+      "value": "",
+      "type": "smallupload",
+      "upload": true
+    },
+    {
+      "name": "faviconExtension",
+      "label": "Favicon extension",
+      "group": "Additional",
+      "value": "image/x-icon",
+      "type": "select",
+      "options": [
+        {
+          "label": ".ico",
+          "value": "image/x-icon"
+        },
+        {
+          "label": ".png",
+          "value": "image/png"
+        }
+      ]
+    }
+  ],
+  "authorConfig": [
+    {
+      "name": "displayPostCounter",
+      "label": "Display post counter",
+      "value": 1,
+      "type": "select",
+      "options": [
+        {
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "label": "Disabled",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "postConfig": [
+    {
+      "name": "displayAuthorBio",
+      "label": "Display author bio",
+      "value": 1,
+      "type": "select",
+      "options": [
+        {
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "label": "Disabled",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "pageConfig": [
+    {
+      "name": "displayAuthorBio",
+      "label": "Display author bio",
+      "value": 1,
+      "type": "select",
+      "options": [
+        {
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "label": "Disabled",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "displayChildPages",
+      "label": "Display child pages",
+      "value": 0,
+      "type": "select",
+      "options": [
+        {
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "label": "Disabled",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "tagConfig": [
+    {
+      "name": "displayPostCounter",
+      "label": "Display post counter",
+      "value": 1,
+      "type": "select",
+      "options": [
+        {
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "label": "Disabled",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "files": {
+    "ignoreAssets": [
+      "scss",
+      ".DS_Store"
+    ],
+    "assetsPath": "assets",
+    "partialsPath": "partials",
+    "responsiveImages": {
+      "contentImages": {
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "dimensions": {
+          "xs": {
+            "width": 300,
+            "height": "auto"
+          },
+          "sm": {
+            "width": 480,
+            "height": "auto"
+          },
+          "md": {
+            "width": 749,
+            "height": "auto"
+          },
+          "xl": {
+            "width": 1200,
+            "height": "auto"
+          }
+        }
+      },
+      "featuredImages": {
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "dimensions": {
+          "xs": {
+            "width": 300,
+            "height": 200
+          },
+          "sm": {
+            "width": 480,
+            "height": "auto"
+          },
+          "md": {
+            "width": 749,
+            "height": "auto"
+          },
+          "xl": {
+            "width": 1200,
+            "height": "auto"
+          }
+        }
+      },
+      "tagImages": {
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "dimensions": {
+          "xs": {
+            "width": 300,
+            "height": 200
+          },
+          "sm": {
+            "width": 480,
+            "height": "auto"
+          },
+          "md": {
+            "width": 749,
+            "height": "auto"
+          },
+          "xl": {
+            "width": 1200,
+            "height": "auto"
+          }
+        }
+      },
+      "authorImages": {
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "dimensions": {
+          "xs": {
+            "width": 300,
+            "height": 200
+          },
+          "sm": {
+            "width": 480,
+            "height": "auto"
+          },
+          "md": {
+            "width": 749,
+            "height": "auto"
+          },
+          "xl": {
+            "width": 1200,
+            "height": "auto"
+          }
+        }
+      },
+      "optionImages": {
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "dimensions": {
+          "xs": {
+            "width": 300,
+            "height": 200
+          },
+          "sm": {
+            "width": 480,
+            "height": "auto"
+          },
+          "md": {
+            "width": 749,
+            "height": "auto"
+          },
+          "xl": {
+            "width": 1200,
+            "height": "auto"
+          }
+        }
+      },
+      "galleryImages": {
+        "sizes": "",
+        "dimensions": {
+          "thumbnail": {
+            "width": 720,
+            "height": "auto"
+          }
+        }
+      }
+    }
+  }
+}

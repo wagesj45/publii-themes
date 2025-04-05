@@ -1,0 +1,26 @@
+<footer>
+    <!--Footer-->
+    {{{@config.custom.footerText}}}
+    <div>
+        <img src="./assets/img/netscape.gif" />
+        <a href="https://getfirefox.org" target="_blank">
+            <img src="./assets/img/firefox2.gif" />
+        </a>
+        <a href="https://www.waterfox.net/" target="_blank">
+            <img src="./assets/img/waterfox.gif" />
+        </a>
+    </div>
+</footer> <!--Index-->
+
+<script async src="{{js "scripts.js"}}"></script>
+
+{{! code injection by a Custom HTML tool }}
+{{{@footerCustomCode}}}
+{{! /code injection by a Custom HTML tool }}
+
+{{! helper for creating footer output with Publii-related tags. Currently used for GDPR cookies popup }}
+{{{ publiiFooter }}}
+{{! /helper for creating footer output with Publii-related tags. Currently used for GDPR cookies popup }}
+
+</body>
+</html>

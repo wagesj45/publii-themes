@@ -1,0 +1,42 @@
+{{> head}}
+{{> navbar}}
+
+<header>
+    <h1>{{@config.custom.landingPageTitle}}</h1>
+    <p class="subtitle">{{@config.custom.landingPageSubtitle}}</p>
+</header>
+
+<main>
+    <h1> {{ translate "index.aboutMe" }} </h1>
+    {{{@config.custom.landingPageText}}}
+    <hr />
+
+    {{#if featuredPosts}}
+<h2>
+    {{ translate "index.featuredPosts" }}
+</h2>
+    <ol>
+        {{#each featuredPosts}}
+        <li><a href="{{url}}">{{title}}</a></li>
+        {{/each}}
+    </ol>
+    {{/if}}
+    <hr />
+    <h2>{{ translate "index.blogEntries" }}</h2>
+    <ul>
+        {{#each posts}}
+        <li>
+            <a href="{{url}}">
+                {{title}}
+            </a>
+            <br>
+            <small>{{ translate "index.postedOn" }}{{date createdAt}}</small>
+        </li>
+        {{/each}}
+    </ul>
+    {{> pagination}}
+</main>
+
+<footer>
+    {{> footer}}
+</footer>
